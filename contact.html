@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Pawfect Match</title>
+  <meta name="description" content="Contact Pawfect Match with questions about adoption, fostering, volunteering, donations, and pet matching support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    @media (max-width: 680px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pets.html">Adopt</a></li>
+      <li><a href="match.html">Find My Match</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="match.html" class="btn btn-primary">Find My Match</a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="pets.html">Adopt</a>
+  <a href="match.html">Find My Match</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <h1>Get in touch</h1>
+    <p>Have a question about adopting, fostering, or helping out? Our team is here to make the next step clear.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <form data-validate class="form">
+          <div class="form-row">
+            <div class="field">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full name</label>
+                <input class="form-input" type="text" id="full-name" name="full-name" autocomplete="name" required>
+                <div class="form-error">This field is required.</div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" autocomplete="email" required>
+                <div class="form-error">This field is required.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone</label>
+              <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="form-group">
+              <label class="form-label" for="interest">I'm interested in</label>
+              <select class="form-select" id="interest" name="interest" required>
+                <option value="">Choose an option</option>
+                <option value="adopting">Adopting a pet</option>
+                <option value="fostering">Fostering</option>
+                <option value="volunteering">Volunteering</option>
+                <option value="donating">Donating</option>
+                <option value="something-else">Something else</option>
+              </select>
+              <div class="form-error">This field is required.</div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" rows="6" required></textarea>
+              <div class="form-error">This field is required.</div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <div class="form-success">✓ Thanks! We'll get back to you within 1 business day.</div>
+        </form>
+
+        <aside>
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Visit the adoption lounge</h3>
+            <p>128 Maple Street, Portland, OR</p>
+            <div class="feature-icon">✉️</div>
+            <h3>Email us</h3>
+            <p><a href="mailto:hello@pawfectmatch.org">hello@pawfectmatch.org</a></p>
+            <div class="feature-icon">📞</div>
+            <h3>Call</h3>
+            <p><a href="tel:+15035550142">(503) 555-0142</a></p>
+            <div class="feature-icon">🕘</div>
+            <h3>Hours</h3>
+            <p>Mon–Sat, 10am–6pm</p>
+          </div>
+          <p>Follow us:
+            <a href="#" aria-label="Instagram">📷 Instagram</a> ·
+            <a href="#" aria-label="TikTok">🎵 TikTok</a> ·
+            <a href="#" aria-label="Facebook">💬 Facebook</a>
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently asked questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q">What are the adoption fees, and what do they include?</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Adoption fees usually range from $75 to $275 depending on the pet's species, age, and medical needs. Each adoption includes a wellness exam, age-appropriate vaccines, microchip, spay or neuter surgery when applicable, parasite treatment, and 30 days of post-adoption support from our team.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What does the adoption process look like?</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Start by browsing available pets or taking the match quiz. Once you find a pet who feels like a good fit, submit an inquiry and we will schedule a conversation, answer care questions, and arrange a meet-and-greet. If everyone feels comfortable, we complete the adoption agreement and send you home with records, transition tips, and a starter care plan.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Are there home or age requirements to adopt?</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Adopters must be at least 18 years old and able to provide a safe, stable home. Renters should confirm that pets are allowed before applying. We do not require a fenced yard for every dog, but we do match each pet to a home that fits their exercise level, temperament, and comfort around children or other animals.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What is the 14-day return policy?</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">If the match is not working within the first 14 days, contact us right away. We will help troubleshoot common transition issues, and if returning the pet is the kindest option, we will welcome them back without judgment. The adoption fee can be transferred to another Pawfect Match adoption within six months.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How does fostering work?</button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Fosters provide a temporary home while a pet waits for adoption, recovers from medical care, or needs a quieter place to decompress. Pawfect Match supplies food, basic gear, veterinary care, and coaching. You can choose short-term, weekend, or longer foster placements based on your schedule and experience.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+        <p>Helping rescued pets find loving homes since 2024. Every match made is a tail that gets to keep wagging.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+          <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          <a class="social-btn" href="#" aria-label="Facebook">💬</a>
+          <a class="social-btn" href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Adopt</h4>
+        <ul>
+          <li><a href="pets.html">Browse Pets</a></li>
+          <li><a href="match.html">Find My Match</a></li>
+          <li><a href="pets.html">Dogs</a></li>
+          <li><a href="pets.html">Cats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html">How It Works</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Foster</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Pawfect Match. Made with 🐾 for pets everywhere.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

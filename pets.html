@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptable Pets — Pawfect Match</title>
+  <meta name="description" content="Browse adoptable dogs, cats, rabbits, and birds waiting for loving homes through Pawfect Match.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pets.html" class="active">Adopt</a></li>
+      <li><a href="match.html">Find My Match</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="match.html" class="btn btn-primary">Find My Match</a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="pets.html" class="active">Adopt</a>
+  <a href="match.html">Find My Match</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Meet our adoptable pets</h1>
+      <p>Browse the pets waiting for a home, or take the quiz to discover who might fit your everyday rhythm best.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Pets</button>
+        <button class="filter-btn" data-filter="dog">🐶 Dogs</button>
+        <button class="filter-btn" data-filter="cat">🐱 Cats</button>
+        <button class="filter-btn" data-filter="rabbit">🐰 Rabbits</button>
+        <button class="filter-btn" data-filter="bird">🐦 Birds</button>
+      </div>
+
+      <div class="pets-grid">
+        <article class="pet-card" data-id="bella" data-species="dog">
+          <div class="pet-photo">
+            🐕
+            <span class="pet-badge">Good with kids</span>
+            <button class="pet-fav" aria-label="Save Bella">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Bella</h2>
+            <p class="pet-meta">Labrador Mix · 3 years · Female</p>
+            <p class="pet-desc">Bella greets every walk like a tiny parade. She is gentle with children, loves tennis balls, and settles happily beside the sofa after dinner.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">House-trained</span>
+              <span class="pet-tag">Loves walks</span>
+              <span class="pet-tag">Family-ready</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="milo" data-species="cat">
+          <div class="pet-photo">
+            🐈
+            <span class="pet-badge">New</span>
+            <button class="pet-fav" aria-label="Save Milo">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Milo</h2>
+            <p class="pet-meta">Orange Tabby · 2 years · Male</p>
+            <p class="pet-desc">Milo is a sunny window inspector with a confident little chirp. He likes chin scratches, puzzle feeders, and supervising laundry day from a warm basket.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Lap cat</span>
+              <span class="pet-tag">Playful</span>
+              <span class="pet-tag">Window watcher</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="luna" data-species="rabbit">
+          <div class="pet-photo">
+            🐰
+            <span class="pet-badge">Bonded pair</span>
+            <button class="pet-fav" aria-label="Save Luna">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Luna</h2>
+            <p class="pet-meta">Mini Lop · 1 year · Female</p>
+            <p class="pet-desc">Luna is tidy, curious, and always first to investigate a fresh cardboard tunnel. She is bonded with Clover and blossoms in a calm room with soft voices.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Litter-trained</span>
+              <span class="pet-tag">Gentle</span>
+              <span class="pet-tag">Quiet</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="otto" data-species="dog">
+          <div class="pet-photo">
+            🐩
+            <span class="pet-badge">Senior sweetheart</span>
+            <button class="pet-fav" aria-label="Save Otto">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Otto</h2>
+            <p class="pet-meta">Poodle Mix · 9 years · Male</p>
+            <p class="pet-desc">Otto is a polite old soul who offers a paw before climbing into your lap. He enjoys short strolls, soft blankets, and a predictable bedtime routine.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Calm</span>
+              <span class="pet-tag">Apartment-friendly</span>
+              <span class="pet-tag">Leash trained</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="nori" data-species="cat">
+          <div class="pet-photo">
+            🐱
+            <span class="pet-badge">Special needs</span>
+            <button class="pet-fav" aria-label="Save Nori">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Nori</h2>
+            <p class="pet-meta">Tuxedo Shorthair · 4 years · Female</p>
+            <p class="pet-desc">Nori has one cloudy eye and a spectacular purr that starts the moment she hears her name. She prefers gentle play and would shine with a patient adopter.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Affectionate</span>
+              <span class="pet-tag">Quiet</span>
+              <span class="pet-tag">Solo pet</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="pepper" data-species="bird">
+          <div class="pet-photo">
+            🦜
+            <span class="pet-badge">New</span>
+            <button class="pet-fav" aria-label="Save Pepper">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Pepper</h2>
+            <p class="pet-meta">Green-Cheek Conure · 5 years · Male</p>
+            <p class="pet-desc">Pepper whistles along to morning coffee and bobs when music plays. He is clever, social, and happiest with someone who enjoys daily out-of-cage time.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Talkative</span>
+              <span class="pet-tag">Social</span>
+              <span class="pet-tag">Clever</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="daisy" data-species="dog">
+          <div class="pet-photo">
+            🐶
+            <span class="pet-badge">New</span>
+            <button class="pet-fav" aria-label="Save Daisy">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Daisy</h2>
+            <p class="pet-meta">Beagle · 1 year · Female</p>
+            <p class="pet-desc">Daisy is a happy little detective with her nose to the ground and her tail in constant motion. She learns quickly when treats are involved and loves weekend hikes.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Food motivated</span>
+              <span class="pet-tag">Active</span>
+              <span class="pet-tag">Loves walks</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="saffron" data-species="cat">
+          <div class="pet-photo">
+            🐈
+            <span class="pet-badge">Good with kids</span>
+            <button class="pet-fav" aria-label="Save Saffron">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Saffron</h2>
+            <p class="pet-meta">Calico · 6 years · Female</p>
+            <p class="pet-desc">Saffron is a steady, affectionate cat who chooses one sunny chair and makes it a throne. She is patient with respectful children and never says no to brushing.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Gentle</span>
+              <span class="pet-tag">Lap cat</span>
+              <span class="pet-tag">Brushing fan</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="clover" data-species="rabbit">
+          <div class="pet-photo">
+            🐇
+            <span class="pet-badge">Bonded pair</span>
+            <button class="pet-fav" aria-label="Save Clover">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Clover</h2>
+            <p class="pet-meta">Dutch Rabbit · 2 years · Male</p>
+            <p class="pet-desc">Clover is brave enough to ask for herbs and sensible enough to nap through the afternoon. He is bonded with Luna and likes roomy playpens with chew-safe toys.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Litter-trained</span>
+              <span class="pet-tag">Curious</span>
+              <span class="pet-tag">Chew toys</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="rocket" data-species="dog">
+          <div class="pet-photo">
+            🐕
+            <span class="pet-badge">Special needs</span>
+            <button class="pet-fav" aria-label="Save Rocket">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Rocket</h2>
+            <p class="pet-meta">Border Collie Mix · 5 years · Male</p>
+            <p class="pet-desc">Rocket is deaf, brilliant, and already knows hand signals for sit, stay, and spin. He thrives with structure, yard games, and people who love a smart project dog.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Hand signals</span>
+              <span class="pet-tag">Agility fan</span>
+              <span class="pet-tag">Smart</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pet-card" data-id="juno" data-species="cat">
+          <div class="pet-photo">
+            🐱
+            <span class="pet-badge">Senior sweetheart</span>
+            <button class="pet-fav" aria-label="Save Juno">🤍</button>
+          </div>
+          <div class="pet-body">
+            <h2 class="pet-name">Juno</h2>
+            <p class="pet-meta">Russian Blue Mix · 10 years · Female</p>
+            <p class="pet-desc">Juno has impeccable manners and a soft meow reserved for breakfast requests. She wants a peaceful home, a low windowsill, and someone who appreciates slow trust.</p>
+            <div class="pet-tags">
+              <span class="pet-tag">Quiet</span>
+              <span class="pet-tag">Independent</span>
+              <span class="pet-tag">Low energy</span>
+            </div>
+            <div class="pet-actions">
+              <a href="contact.html" class="btn btn-primary">Adopt me</a>
+              <a href="match.html" class="btn btn-outline">Take the quiz</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pets-empty" style="display:none; text-align:center; color:var(--text-mid); padding:40px 0;">No pets match that filter yet — try another! 🐾</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2>Not sure who's right for you?</h2>
+        <p>Answer a few friendly questions and we will point you toward pets who match your home, habits, and heart.</p>
+        <a href="match.html" class="btn btn-light">Find My Match</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+        <p>Helping rescued pets find loving homes since 2024. Every match made is a tail that gets to keep wagging.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+          <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          <a class="social-btn" href="#" aria-label="Facebook">💬</a>
+          <a class="social-btn" href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Adopt</h4>
+        <ul>
+          <li><a href="pets.html">Browse Pets</a></li>
+          <li><a href="match.html">Find My Match</a></li>
+          <li><a href="pets.html">Dogs</a></li>
+          <li><a href="pets.html">Cats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html">How It Works</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Foster</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Pawfect Match. Made with 🐾 for pets everywhere.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

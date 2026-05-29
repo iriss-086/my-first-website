@@ -1,5 +1,9 @@
-# Local Claude Code settings (machine-specific)
-.claude/settings.local.json
+# Claude Code session/local files (machine-specific)
+.claude/
 
 # macOS
 .DS_Store
+
+# Build-time artifacts (not part of the site)
+.build-spec.md
+.build/

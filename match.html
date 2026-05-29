@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Match — Pawfect Match</title>
+  <meta name="description" content="Take a quick five-question quiz to discover which kind of adoptable companion may fit your home, schedule, and personality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pets.html">Adopt</a></li>
+      <li><a href="match.html" class="active">Find My Match</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="match.html" class="btn btn-primary">Find My Match</a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="pets.html">Adopt</a>
+  <a href="match.html">Find My Match</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Find your match</h1>
+      <p>Answer 5 quick questions and we'll suggest the kind of companion that fits your life.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="quiz" data-quiz>
+        <div class="quiz-progress"><div class="quiz-progress-bar"></div></div>
+
+        <div class="quiz-step active">
+          <div class="quiz-question">How active is your day-to-day?</div>
+          <p class="quiz-sub">Think about your usual rhythm, not just your best weekend.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="dog"><span class="opt-emoji">🐶</span>Very active and outdoorsy</button>
+            <button class="quiz-option" data-value="cat"><span class="opt-emoji">🐱</span>Balanced with cozy downtime</button>
+            <button class="quiz-option" data-value="rabbit"><span class="opt-emoji">🐰</span>Calm and home-centered</button>
+            <button class="quiz-option" data-value="bird"><span class="opt-emoji">🐦</span>Chatty, social, and lively</button>
+          </div>
+        </div>
+
+        <div class="quiz-step">
+          <div class="quiz-question">What's your living space like?</div>
+          <p class="quiz-sub">A good match starts with a space where everyone can settle in.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="dog"><span class="opt-emoji">🏡</span>A house with a yard</button>
+            <button class="quiz-option" data-value="cat"><span class="opt-emoji">🪟</span>An apartment with sunny spots</button>
+            <button class="quiz-option" data-value="rabbit"><span class="opt-emoji">🧺</span>Small but cozy and quiet</button>
+            <button class="quiz-option" data-value="bird"><span class="opt-emoji">🌿</span>Room for a cage or aviary</button>
+          </div>
+        </div>
+
+        <div class="quiz-step">
+          <div class="quiz-question">How much time are you home?</div>
+          <p class="quiz-sub">Some companions thrive with constant company, while others enjoy independence.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="dog"><span class="opt-emoji">🤗</span>Lots, and I love company</button>
+            <button class="quiz-option" data-value="cat"><span class="opt-emoji">🗝️</span>I'm in and out most days</button>
+            <button class="quiz-option" data-value="rabbit"><span class="opt-emoji">🌙</span>Mostly evenings and weekends</button>
+            <button class="quiz-option" data-value="bird"><span class="opt-emoji">🎧</span>Around often, but busy</button>
+          </div>
+        </div>
+
+        <div class="quiz-step">
+          <div class="quiz-question">Ideal weekend with a pet?</div>
+          <p class="quiz-sub">Choose the scene that sounds most like your kind of joy.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="dog"><span class="opt-emoji">🥾</span>Hikes, fetch, and fresh air</button>
+            <button class="quiz-option" data-value="cat"><span class="opt-emoji">🛋️</span>Cuddles on the couch</button>
+            <button class="quiz-option" data-value="rabbit"><span class="opt-emoji">🥬</span>Gentle floor time and snacks</button>
+            <button class="quiz-option" data-value="bird"><span class="opt-emoji">🎵</span>Songs, tricks, and chatter</button>
+          </div>
+        </div>
+
+        <div class="quiz-step">
+          <div class="quiz-question">Your experience with pets?</div>
+          <p class="quiz-sub">There are wonderful companions for first-timers and seasoned adopters.</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="dog"><span class="opt-emoji">💪</span>Confident with training and routines</button>
+            <button class="quiz-option" data-value="cat"><span class="opt-emoji">😌</span>Easygoing and flexible</button>
+            <button class="quiz-option" data-value="rabbit"><span class="opt-emoji">🤲</span>Gentle, patient, and observant</button>
+            <button class="quiz-option" data-value="bird"><span class="opt-emoji">🧠</span>Curious and ready to learn</button>
+          </div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="btn btn-outline quiz-prev">← Back</button>
+          <button class="btn btn-primary quiz-next">Next →</button>
+        </div>
+
+        <div class="quiz-result">
+          <div class="result-emoji"></div>
+          <h3 class="result-title"></h3>
+          <p class="result-text"></p>
+          <a href="pets.html" class="btn btn-accent btn-lg">Meet your matches →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container text-center">
+      <span class="tag teal">A gentle starting point</span>
+      <h2 class="section-title">Every pet has their own story</h2>
+      <p class="section-subtitle">Your quiz result is a helpful first step, not a rulebook. Personality, care needs, age, and chemistry all matter, so take time to meet the pets who catch your heart.</p>
+      <a href="pets.html" class="btn btn-outline">Browse all pets</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">🐾</span>Pawfect<span> Match</span></a>
+        <p>Helping rescued pets find loving homes since 2024. Every match made is a tail that gets to keep wagging.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+          <a class="social-btn" href="#" aria-label="TikTok">🎵</a>
+          <a class="social-btn" href="#" aria-label="Facebook">💬</a>
+          <a class="social-btn" href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Adopt</h4>
+        <ul>
+          <li><a href="pets.html">Browse Pets</a></li>
+          <li><a href="match.html">Find My Match</a></li>
+          <li><a href="pets.html">Dogs</a></li>
+          <li><a href="pets.html">Cats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html">How It Works</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Foster</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Pawfect Match. Made with 🐾 for pets everywhere.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
